@@ -30,9 +30,16 @@ The i starts at 3 in order to account for not needing 0 through 2 in the loop.
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
+for (let i = 0; i < 10; i += 2) {
+  console.log(i);
+}
+The i goes to ten into to count the everything, going up two at a time.
+
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
-
+for (let i = 5; i >= 0; i--) {
+  console.log(i + "");
+}
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');

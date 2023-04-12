@@ -16,24 +16,20 @@ console.log('count from 0 to 5');
 for (let i = 0; i < 6; i++) {
   console.log(i);
 }
-The i is less than 6 in order to allow the console to count 0 to 5.
-
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
 for (let i = 3; i < 6; i++) {
   console.log(i);
 }
-The i starts at 3 in order to account for not needing 0 through 2 in the loop.
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-for (let i = 0; i < 10; i += 2) {
+for (let i = 2; i < 12; i += 2) {
   console.log(i);
 }
-The i goes to ten into to count the everything, going up two at a time.
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
@@ -50,8 +46,8 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
 
-for (let i = 0; i < stars; i++) {
-  console.log('The names of each star are:' + stars);
+for( some of stars ){
+  console.log( 'for of loop', some );
 }
 
 // 3. While loops  
@@ -61,25 +57,29 @@ console.log('---- 3. While loop ----');
 console.log('Some stars using while:');
 
 let i = 0;
-while (i < stars) {
-  alert (i);
+while (i < stars.length) {
+  console.log(' in a while loop.', stars[i]);
   i++;
-} 
+}
+
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let index = 0;
+const max = 6;
 
-let i = 0;
-while (i < 6) {
-  alert( i );
-  i++;
-}
+ while( index < max ){
+  console.log( 'in while loop. index:', index );
+  index++;
+ }
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 
-let i = 10;
-while (i >= 5) {
-  alert( i );
-  i--;
+let num1 = 10
+let num2 = 5
+
+while( num1 >= num2){
+  console.log( 'in while loop. num1:', num1);
+  num1--;
 }
